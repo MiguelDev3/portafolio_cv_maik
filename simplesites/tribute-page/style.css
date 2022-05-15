@@ -1,0 +1,154 @@
+/* -------------CUSTOM PROPERTIES------------- */
+:root {
+    --font: 'Roboto', sans-serif;
+    --first-color: #3f88c5;
+    --second-color: #ad8f8d;
+    --third-color: #f49d37;
+    --text-color: #140f2d;
+    --white-color: white;
+    --light-gray-color: lightgray;
+    --header-height: 5rem;
+}
+
+
+/* -------------RESET------------- */
+
+html{
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--light-gray-color);
+    color: var(--text-color)
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h5 {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+h6 {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+/* -------------COMPONENTS------------- */
+
+.main-header {
+    position: sticky;
+    top: 0;
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white-color);
+    background-color: var(--first-color);
+}
+
+.info-content {
+    padding: 1rem 4rem;
+}
+
+@media screen and (min-width: 768px){
+    .info-content {
+        padding: 1rem 6rem;
+    }       
+}
+
+@media screen and (min-width: 1024px) {
+    .info-content {
+        padding: 1rem 12rem;
+    }
+}
+
+/* -------------UTILITIES------------- */
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.card {
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: var(--white-color);
+    border: thin 1rem var();
+}
+
+/* -------------SITE STYLES------------- */
+
+#main {
+    margin-top: 2rem;
+}
+
+img {
+    margin: .5rem auto;
+    border: solid var(--second-color);
+    border-radius: 25%;
+    max-width: 100%;
+    height: auto;
+}
+
+#img-caption {
+    font-size: 18px;
+    margin: .25rem auto;
+}
+
+#img-div {
+    height: auto;
+    margin: auto 4rem;
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(64px, 1fr));
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
+
+.timeline li{
+    margin: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.timeline ul {
+    padding-left: 0;
+}
+
