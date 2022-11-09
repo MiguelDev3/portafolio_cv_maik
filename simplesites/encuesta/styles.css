@@ -1,0 +1,81 @@
+/*---------------------- Custom Properties ----------------------*/
+:root {
+    --font: 'Oxygen', sans-serif;
+    --first-color: #083D77;
+    --second-color: #7E8D85;
+    --third-color: #B3BFB8;
+    --fourth-color: #F0F7F4;
+    --white-color: white;
+    --light-gray-color: lightgray;
+    --black-color: #000;
+}
+
+/*---------------------- Reset ----------------------*/
+
+html{
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url(assets/Fondo_elegante_encuesta.jpg);
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 50vw;
+    background-size: cover;
+
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h5 {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+h6 {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+/*---------------------- Site Styles ----------------------*/
+
+.contenido-principal {
+    width: 75%;
+    background-color: var(--white-color);    
+    margin: 5rem auto;
+    padding: 1rem 2rem;
+}
+
+.contenido-principal h1{
+    text-align: center;
+}
